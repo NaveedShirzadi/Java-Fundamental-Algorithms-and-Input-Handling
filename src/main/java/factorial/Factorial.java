@@ -11,10 +11,28 @@ Example Output:
 What number would you like to compute the factorial for? 4
 24
 */
-
+import java.util.Scanner;
 public class Factorial {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Ask user for number
+        System.out.print("What number would you like to compute the factorial for? ");
+        int n = input.nextInt();
+
+        // Calculates the factorial using a for loop
+        int result = 1;
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+
+        // Print result
+        System.out.println(result);
+
+        input.close();
+
+
 
     }
 }

@@ -12,10 +12,12 @@ package dog;
 
 public class Dog {
     private String breed;
+    private String name;
     // Add an instance variable here for name.
 
-    public Dog(String theBreed)
+    public Dog(String theName, String theBreed)
     {
+        name = theName;
         breed = theBreed;
     }
 

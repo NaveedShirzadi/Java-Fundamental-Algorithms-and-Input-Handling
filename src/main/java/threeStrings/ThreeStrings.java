@@ -1,4 +1,5 @@
 package threeStrings;
+import java.util.Scanner;
 //Write a program that asks the user for three strings.
 //
 //Then, print out whether the first string
@@ -21,6 +22,30 @@ package threeStrings;
 public class ThreeStrings {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Ask for strings
+        System.out.print("First string? ");
+        String first = input.nextLine();
+
+        System.out.print("Second string? ");
+        String second = input.nextLine();
+
+        System.out.print("Third string? ");
+        String third = input.nextLine();
+
+        // Combine the first and  second
+        String combined = first + second;
+
+        // Compare with the third
+        if (combined.equals(third)) {
+            System.out.println(first + " + " + second + " is equal to " + third + "!");
+        } else {
+            System.out.println(first + " + " + second + " is not equal to " + third + "!");
+        }
+
+        input.close();
+    }
 
     }
-}
+

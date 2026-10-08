@@ -23,6 +23,7 @@ public class Dog {
 
     public String toString()
     {
-        return breed;
+
+        return name + " is a " + breed;
     }
 }
